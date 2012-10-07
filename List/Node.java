@@ -2,7 +2,7 @@ package edu.cquptzx.List;
 public class  Node
 {
 	Object element;
-	Node next;
+    Node next;
 	
 	Node(Node nextval)
 	{
