@@ -5,7 +5,7 @@ import java.util.Comparator;
 /**
  * 设计一个实现了Compartor接口的类,实现两个整型对象的比较.
  * @author cquptzx
- *
+ * 实现方法:将两个对象进行类型转换,然后比较数值.
  */
 public class MyComparator implements Comparator
 {
