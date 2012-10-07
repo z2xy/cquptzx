@@ -128,6 +128,14 @@ public class SeqList implements List
 		}
 		return tag ;
 	}
+	public void setSize(int sz)
+	{
+		this.size=sz;
+	}
+	public int getSize() 
+	{
+		return size;
+	}
 	
 	 /* 列出顺序表的所有元素.
 		 public void List(SeqList sl) throws Exception
@@ -139,5 +147,20 @@ public class SeqList implements List
 			}
 			System.out.println("\n--------------------------------\n");
 		}  
+	 */
+	
+	
+	/*定位指定的元素,找出序号index
+	 public int Location(SeqList sl,int x) throws Exception
+	{
+		for(int i=0;i<sl.getSize();i++)
+		{
+			if(sl.getData(i).equals(x))
+			{
+				return i;
+			}			
+		}
+		return -1;
+	}
 	 */
 }
