@@ -118,5 +118,16 @@ public class SingleLinkList implements List
 		// TODO Auto-generated method stub
 		return size ==0;
 	}
+	/*
+	 public void List(SingleLinkList sll) throws Exception
+	{
+		System.out.println("\n--------------------------------\n");
+		for(int i = 0;i<sll.getSize();i++)
+		{
+			System.out.print(sll.getData(i) + " ");
+		}
+		System.out.println("\n--------------------------------\n");	
+	}	
+	 **/
 	
 }

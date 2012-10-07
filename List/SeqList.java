@@ -128,4 +128,16 @@ public class SeqList implements List
 		}
 		return tag ;
 	}
+	
+	 /* 列出顺序表的所有元素.
+		 public void List(SeqList sl) throws Exception
+		{
+			System.out.println("\n--------------------------------\n");
+			for(int i = 0;i<sl.size();i++)
+			{
+				System.out.print(sl.getData(i) + " ");
+			}
+			System.out.println("\n--------------------------------\n");
+		}  
+	 */
 }
