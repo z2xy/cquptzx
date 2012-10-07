@@ -2,13 +2,13 @@ package edu.cquptzx.List;
 
 public class SingleLinkList implements List
 {
-	Node head;
+	private Node head;
 	Node current;
 	int size;
 	
-	SingleLinkList()
+	public SingleLinkList()
 	{
-		head = current = new Node(null);
+		setHead(current = new Node(null));
 		size =0;
 	}
 	/**
@@ -24,13 +24,21 @@ public class SingleLinkList implements List
 			throw new Exception("i error in INDEX.");
 		}
 		if(i == -1) return;
-		current = head.next;
+		current = getHead().next;
 		int j = 0;
 		while(current!=null && j<i)
 		{
 			current = current.next;
 			j++;
 		}
+	}
+	public Node getHead() 
+	{
+		return head;
+	}
+	public void setHead(Node head) 
+	{
+		this.head = head;
 	}
 	/**
 	 * 插入节点算法:
@@ -55,7 +63,8 @@ public class SingleLinkList implements List
 	 * 2.把第i个节点脱链:让第i-1个节点的next域等于第i个节点的next域.
 	 * 3.数据元素总数size减1.
 	 */
-	public Object delete(int i) throws Exception {
+	public Object delete(int i) throws Exception 
+	{
 		if(size == 0)
 		{
 			throw new Exception ("Link Blank in DELETE.");
@@ -76,7 +85,8 @@ public class SingleLinkList implements List
 	 * 2.返回该节点的数据域的值.
 	 */
 	@Override
-	public Object getData(int i) throws Exception {
+	public Object getData(int i) throws Exception 
+	{
 		// TODO Auto-generated method stub
 		if(i<-1 || i>size-1)
 		{
@@ -87,13 +97,24 @@ public class SingleLinkList implements List
 	}
 
 	@Override
-	public int size() {
+	public int size()
+	{
 		// TODO Auto-generated method stub
 		return size;
 	}
 
+	public int getSize()
+	{
+
+		return size;
+	}
+	public void setSize(int sz) 
+	{
+		this.size= sz;
+	}
 	@Override
-	public boolean isEmpty() {
+	public boolean isEmpty()
+	{
 		// TODO Auto-generated method stub
 		return size ==0;
 	}

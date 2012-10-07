@@ -8,7 +8,7 @@ public class  Node
 	{
 		next = nextval;
 	}
-	Node(Object obj,Node nextval)
+	 public Node(Object obj,Node nextval)
 	{
 		element = obj;
 		next = nextval;
